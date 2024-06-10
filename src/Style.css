@@ -1,0 +1,124 @@
+/* General Styling */
+body {
+  font-family: Arial, sans-serif;
+}
+
+.App {
+  text-align: center;
+}
+
+/* Navigation Styling */
+nav {
+  margin: 16px 0;
+}
+
+.nav-link {
+  margin: 0 16px;
+  text-decoration: none;
+  color: #ff6699; 
+  font-weight: bold;
+}
+
+.nav-link:hover {
+  color: #ff3399; 
+}
+
+/* Bot Collection and Army Styling */
+
+.bot-collection, .your-bot-army .bot-collection {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-items: center; 
+  gap: 16px;
+  padding: 16px;
+}
+
+
+/* Bot Card Styling */
+.bot-card {
+  background-color: #ffe6f0; 
+  border: 1px solid #ffe6f0; 
+  border-radius: 8px;
+  width: 90%; 
+  margin: 16px;
+  padding: 20px; 
+  box-shadow: 0 2px 4px rgba(255, 105, 180, 0.2); 
+  text-align: center;
+  transition: transform 0.2s;
+}
+
+.bot-card:hover {
+  transform: scale(1.05);
+}
+
+.bot-card img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 50%;
+  border: 2px solid  #ff66a3; 
+}
+
+.bot-card h2 {
+  color: #ff3399; 
+  font-size: 1.2em; 
+}
+
+.bot-card p {
+  color: #ff6699; 
+  font-size: 1em; 
+}
+
+/* Button Styling */
+.bot-card button {
+  background-color: #ff99cc; 
+  border: none;
+  border-radius: 4px;
+  padding: 8px 16px;
+  margin: 8px;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.bot-card button:hover {
+  background-color: #ff6699; 
+}
+
+.bot-card .enlist-button {
+  background-color: #ff6699; 
+}
+
+.bot-card .enlist-button:hover {
+  background-color: #ff3399; 
+}
+
+.bot-card .discharge-button {
+  background-color: #ff3333; 
+}
+
+.bot-card .discharge-button:hover {
+  background-color: #cc0000; 
+}
+
+/* Remove Button Styling */
+.bot-card .remove-button {
+  background-color: #ff3333; 
+  border: none;
+  border-radius: 50%;
+  padding: 8px;
+  margin: 8px;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+  line-height: 16px;
+  width: 24px;
+  height: 24px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.2s;
+}
+
+.bot-card .remove-button:hover {
+  background-color: #cc0000; 
+}
