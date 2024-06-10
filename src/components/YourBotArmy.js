@@ -4,7 +4,8 @@ import BotCard from './BotCard';
 function YourBotArmy({ army, removeFromArmy, dischargeBot }) {
   return (
     <div className="your-bot-army">
-      <div className="bot-collection"> 
+      <h2>Your Bot Army</h2>
+      <div className="bot-army-collection">
         {army.map((bot) => (
           <BotCard key={bot.id} bot={bot} onClick={() => removeFromArmy(bot)} dischargeBot={dischargeBot} />
         ))}
