@@ -1,6 +1,6 @@
 import React from 'react';
 
-function BotCard({ bot, onClick, dischargeBot }) {
+function BotCard({ bot, onClick, dischargeBot, removeFromArmy }) {
   const handleDischarge = (e) => {
     e.stopPropagation();
     dischargeBot(bot);
@@ -12,7 +12,7 @@ function BotCard({ bot, onClick, dischargeBot }) {
       <h2>{bot.name}</h2>
       <p>{bot.catchphrase}</p>
       <button className="enlist-button" onClick={(e) => { e.stopPropagation(); onClick(bot); }}>Enlist</button>
-      <button className="discharge-button" onClick={handleDischarge}>Discharge</button>
+      <button className="discharge-button" onClick={removeFromArmy}>Discharge</button>
       <button className="remove-button" onClick={handleDischarge}>x</button>
     </div>
   );
