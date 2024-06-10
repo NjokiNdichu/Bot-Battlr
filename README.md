@@ -19,7 +19,7 @@ Bot Battlr is a web application that allows users to build and manage their bot 
 
 1. Clone the repository.
 2. Install dependencies: `npm install`.
-3. Start the JSON Server: `npm run server`.
+3. Run this command to get the backend started: `json-server --watch db.json`
 4. Start the React application: `npm start`.
 
 ## Contributing
